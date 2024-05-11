@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #70e6f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cityInput {
+  flex: 1;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+
+.search-icon {
+  padding: 10px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.search-icon:hover {
+  background-color: #70e6f3;
+  opacity: 0.8;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 160px;
+  height: 160px;
+  opacity: 0.9;
+}
+
+.temp,
+.location,
+.country {
+  margin-top: 10px;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.temp {
+  font-weight: 500;
+  color: #333;
+}
+
+.location {
+  color: #ffbc00;
+}
+
+.country {
+  font-size: 14px;
+  color: #666;
+}
+
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cord div {
+  text-align: center;
+}
+
+.cord div span {
+  font-size: 16px;
+}
+
+.humidity-percent,
+.wind-percent,
+.cord div span:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.element {
+  text-align: center;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.text {
+  font-size: 14px;
+  color: #888;
+}
+
+.city-not-found,
+.loading-message,
+.error-message {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #ff5a5f;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #70e6f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2db4e8;
+}
